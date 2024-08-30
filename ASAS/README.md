@@ -1,9 +1,9 @@
 # ASAS
 Ateneo Student Assistance System
 
-Angelo Lumba
-Teddy Cruz IV
-Ash T. Salcedo
+#Angelo Lumba
+#Teddy Cruz IV
+#Ash T. Salcedo
 
 How to work with the project:
 
