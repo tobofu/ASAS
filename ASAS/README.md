@@ -1,6 +1,10 @@
 # ASAS
 Ateneo Student Assistance System
 
+Angelo Lumba
+Teddy Cruz IV
+Ash T. Salcedo
+
 How to work with the project:
 
 #Phase 1: Database Creation and Implementation
