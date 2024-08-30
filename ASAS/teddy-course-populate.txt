@@ -1,0 +1,1587 @@
+
+db.courses.insertMany([
+  {
+   name: "CS112",
+   sections: [
+      {
+         instructor: "Hugo Simpson",
+         room: "CTC07",
+         sectionName: "K",
+         timeslot: "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+         instructor: "Juan Greene",
+         room: "F 205",
+         sectionName: "J2",
+         timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+   ],
+   reviews: [
+      {
+         review: "Great course with excellent content.",
+         rating: 10
+      },
+      {
+         review: "The instructor was very engaging.",
+         rating: 10
+      }
+   ],
+   prerequisites: ["CS222","CS123","MATH121"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 10
+   },
+
+  {
+   name: "CS123",
+   sections: [
+      {
+         instructor: "Erma Zimmerman",
+         room: "CTC23",
+         sectionName: "L",
+         timeslot: "TTh 10:00 AM - 11:30 AM"
+      },
+      {
+         instructor: "Whitney Duncan",
+         room: "B 532",
+         sectionName: "Q",
+         timeslot: "S 1:00 PM - 4:30 PM"
+      }
+   ],
+   reviews: [
+      {
+         review: "Very engaging.",
+         rating: 8
+      },
+      {
+         review: "Hardest Subject Ever.",
+         rating: 5
+      }
+   ],
+   prerequisites: ["CS100", "MATH101"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 10
+   },
+
+  {
+    name: "MATH101",
+    sections: [
+      {
+        instructor: "Matthew Jimenez",
+        room: "CTC02",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Brenda Rodriquez",
+        room: "F 201",
+        sectionName: "B",
+        timeslot: "TTh 11:00 AM - 12:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Challenging but rewarding.",
+        rating: 9
+      },
+      {
+        review: "The instructor was very helpful.",
+        rating: 9
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Mathematics",
+    school: "SOSE",
+    averageRating: 9
+  },
+
+  {
+    name: "PHYS100",
+    sections: [
+      {
+        instructor: "Kristi Burgess",
+        room: "B 301",
+        sectionName: "X",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Wilma Burton",
+        room: "CTC 401",
+        sectionName: "Y",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating subject!",
+        rating: 8
+      },
+      {
+        review: "The labs were enjoyable.",
+        rating: 7
+      }
+    ],
+    prerequisites: ["MATH101"],
+    department: "Physics",
+    school: "SOSE",
+    averageRating: 7
+  },
+  {
+   name: "CS212",
+   sections: [
+      {
+         instructor: "Yvonne Ellis",
+         room: "B 502",
+         sectionName: "Y2",
+         timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+         instructor: "Wilma Burton",
+         room: "F 212",
+         sectionName: "P2",
+         timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+   ],
+   reviews: [
+      {
+         review: "A little challenging for my taste.",
+         rating: 6
+      },
+      {
+         review: "The lessons were hard but engaging.",
+         rating: 8
+      }
+   ],
+   prerequisites: ["CS222","MATH102","MATH121"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 9
+   },
+  {
+   name: "CS214",
+   sections: [
+      {
+         instructor: "Yvonne Ellis",
+         room: "F 202",
+         sectionName: "Y4",
+         timeslot: "MWF 10:00 AM - 11:30 PM"
+      },
+      {
+         instructor: "Wilma Burton",
+         room: "CTC11",
+         sectionName: "P4",
+         timeslot: "TTh 4:00 PM - 5:30 PM"
+      }
+   ],
+   reviews: [
+      {
+         review: "A little challenging for my taste.",
+         rating: 5
+      },
+      {
+         review: "The lessons were hard but engaging.",
+         rating: 8
+      }
+   ],
+   prerequisites: ["CS222","MATH102","MATH121"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 5
+   },
+  {
+   name: "CS301",
+   sections: [
+      {
+         instructor: "David Lee",
+         room:"CTC03",
+         sectionName: "J3",
+         timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+         instructor: "Alice Johnson",
+         room:"CTC 403",
+         sectionName: "F3",
+         timeslot: "TTh 4:00 PM - 5:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "An interesting approach to programming.",
+        rating: 8
+      },
+      {
+        review: "The lessons were informative.",
+        rating: 7
+      }
+   ],
+   prerequisites: ["CS212","MATH142","PHYS151"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 8
+   },
+  {
+   name: "CS303",
+   sections: [
+      {
+         instructor: "David Lee",
+         room:"B 303",
+         sectionName: "Y3",
+         timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+         instructor: "Alice Johnson",
+         room:"CTC 403",
+         sectionName: "P3",
+         timeslot: "TTh 4:00 PM - 5:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "An interesting approach to programming.",
+        rating: 8
+      },
+      {
+        review: "The lessons were informative.",
+        rating: 7
+      }
+   ],
+   prerequisites: ["CS212","MATH142","PHYS151"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 8
+   },
+  {
+   name: "CS113",
+   sections: [
+      {
+         instructor: "Johnathan Lee",
+         room:"CTC11",
+         sectionName: "Z",
+         timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+         instructor: "Joseph Johnson",
+         room:"CTC03",
+         sectionName: "P3",
+         timeslot: "TTh 4:00 PM - 5:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "An interesting approach to programming.",
+        rating: 8
+      },
+      {
+        review: "The lessons were informative.",
+        rating: 7
+      }
+   ],
+   prerequisites: ["CS212","MATH142","PHYS151"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 8
+   },
+  {
+   name: "CS117",
+   sections: [
+      {
+         instructor: "David Cruz",
+         room:"B 303",
+         sectionName: "Y3",
+         timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+         instructor: "Alex Johnson",
+         room:"CTC 403",
+         sectionName: "P3",
+         timeslot: "TTh 4:00 PM - 5:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "An interesting approach to programming.",
+        rating: 8
+      },
+      {
+        review: "The lessons were informative.",
+        rating: 7
+      }
+   ],
+   prerequisites: ["CS212","MATH142","PHYS151"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 8
+   },
+{
+   name: "ETH404",
+   sections: [
+      {
+         instructor: "Sam Brown",
+         room:"CTC 444",
+         sectionName: "L4",
+         timeslot: "Th 1:00 PM - 2:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "Informative and thought-provoking.",
+        rating: 9
+      },
+      {
+        review: "The course allowed for lively discussion.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS212","PHIL112"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 8
+    },
+  {
+   name: "CS412",
+   sections: [
+      {
+         instructor: "Lisa Green",
+         room:"CTC 412",
+         sectionName: "B4",
+         timeslot: "MWF 9:00 AM - 10:30 AM"
+      }
+   ],
+  reviews: [
+      {
+        review: "Challenging yet engaging.",
+        rating: 9
+      },
+      {
+        review: "I learned a lot about cybersecurity.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS212","MATH142"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 8
+    },
+
+   {
+   name: "CS523",
+   sections: [
+      {
+         instructor: "Michael Smith",
+         room:"B 523",
+         sectionName: "X3",
+         timeslot: "Th 10:00 AM - 11:30 AM"
+      }
+   ],
+  reviews: [
+      {
+        review: "Intensive yet rewarding.",
+        rating: 9
+      },
+      {
+        review: "Loved the practical application of ML.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS303","MATH241","STAT310"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 8
+    },
+  {
+   name: "CS110",
+   sections: [
+      {
+         instructor: "Emily Johnson",
+         room:"CTC10",
+         sectionName: "A1",
+         timeslot: "MWF 2:00 PM - 3:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "A great introduction to Python.",
+        rating: 9
+      },
+      {
+        review: "Hands-on and interactive.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS101"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 8
+  },
+
+  {
+   name: "CS302",
+   sections: [
+      {
+         instructor: "Robert Davis",
+         room:"B 302",
+         sectionName: "Y2",
+         timeslot: "TR 9:00 AM - 10:30 AM"
+      }
+   ],
+  reviews: [
+      {
+        review: "Detailed and thorough.",
+        rating: 9
+      },
+      {
+        review: "Great for those interested in hardware.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS212","ELEC220"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 8
+  },
+
+  {
+   name: "CS411",
+   sections: [
+      {
+         instructor: "William Lee",
+         room:"CTC 411",
+         sectionName: "B1",
+         timeslot: "MWF 10:00 AM - 11:30 AM"
+      }
+   ],
+  reviews: [
+      {
+        review: "Provided a solid foundation for software engineering.",
+        rating: 9
+      },
+      {
+        review: "Challenging and informative.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS212","MATH142"],
+   department: "Computer Science",
+   school: "SOSE",
+   averageRating: 8
+  },
+  {
+    name: "PHYS200",
+    sections: [
+      {
+        instructor: "Olivia Martinez",
+        room: "B 501",
+        sectionName: "Z",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Nathan Turner",
+        room: "B 301",
+        sectionName: "X2",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Interesting subject with challenging labs.",
+        rating: 7
+      },
+      {
+        review: "The instructor was knowledgeable.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["MATH101"],
+    department: "Physics",
+    school: "SOSE",
+    averageRating: 7
+  },
+
+  {
+    name: "CHEM101",
+    sections: [
+      {
+        instructor: "Eva Reynolds",
+        room: "CTC 401",
+        sectionName: "C",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Gary Walsh",
+        room: "F 202",
+        sectionName: "D",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "The labs were fun and educational.",
+        rating: 9
+      },
+      {
+        review: "Great introductory course to chemistry.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Chemistry",
+    school: "SOSE",
+    averageRating: 8
+  },
+  {
+    name: "ENG101",
+    sections: [
+      {
+        instructor: "Sarah Johnson",
+        room: "B 301",
+        sectionName: "A",
+        timeslot: "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+        instructor: "David Smith",
+        room: "F 201",
+        sectionName: "B",
+        timeslot: "TTh 2:00 PM - 3:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Enjoyed the literature analysis.",
+        rating: 9
+      },
+      {
+        review: "The discussions were insightful.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "English",
+    school: "SOH",
+    averageRating: 8
+  },
+
+  {
+    name: "HIST150",
+    sections: [
+      {
+        instructor: "Michael Turner",
+        room: "CTC 401",
+        sectionName: "C",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Emily White",
+        room: "B 501",
+        sectionName: "D",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating historical perspectives.",
+        rating: 9
+      },
+      {
+        review: "The instructor was passionate about the subject.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "History",
+    school: "SOH",
+    averageRating: 8
+  },
+  {
+    name: "BUS300",
+    sections: [
+      {
+        instructor: "Alexandra Turner",
+        room: "CTC 401",
+        sectionName: "C",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "John Thompson",
+        room: "B 501",
+        sectionName: "D",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Practical business strategies covered.",
+        rating: 9
+      },
+      {
+        review: "Engaging discussions on real-world scenarios.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["BUS200"],
+    department: "Business",
+    school: "JGSOM",
+    averageRating: 8
+  },
+
+  {
+    name: "PSYCH101",
+    sections: [
+      {
+        instructor: "Maria Hernandez",
+        room: "B 301",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Richard Lewis",
+        room: "F 201",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating insights into human behavior.",
+        rating: 9
+      },
+      {
+        review: "Engaging lectures with real-world examples.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Psychology",
+    school: "SOSS",
+    averageRating: 8
+  },
+  {
+    name: "ECON301",
+    sections: [
+      {
+        instructor: "Jessica Turner",
+        room: "CTC 402",
+        sectionName: "C",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Mark Johnson",
+        room: "B 502",
+        sectionName: "D",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "In-depth analysis of economic principles.",
+        rating: 9
+      },
+      {
+        review: "Challenging but rewarding assignments.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["ECON201"],
+    department: "Economics",
+    school: "JGSOM",
+    averageRating: 8
+  },
+
+  {
+    name: "BIO201",
+    sections: [
+      {
+        instructor: "Melissa Rodriguez",
+        room: "B 301",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Brian White",
+        room: "CTC 411",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating insights into cellular biology.",
+        rating: 9
+      },
+      {
+        review: "Engaging lab experiments.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["BIOL101", "CHEM101"],
+    department: "Biology",
+    school: "SOSE",
+    averageRating: 8
+  },
+
+  {
+    name: "SOC101",
+    sections: [
+      {
+        instructor: "Rachel Smith",
+        room: "F 201",
+        sectionName: "A",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Christopher Turner",
+        room: "B 301",
+        sectionName: "B",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Insightful discussions on sociological concepts.",
+        rating: 9
+      },
+      {
+        review: "The instructor made the subject accessible.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Sociology",
+    school: "SOSS",
+    averageRating: 8
+  },
+
+  {
+    name: "PHIL200",
+    sections: [
+      {
+        instructor: "Andrew Turner",
+        room: "CTC 413",
+        sectionName: "C",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Emma Davis",
+        room: "B 501",
+        sectionName: "D",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Thought-provoking philosophy discussions.",
+        rating: 9
+      },
+      {
+        review: "Challenging but rewarding readings.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["PHIL101"],
+    department: "Philosophy",
+    school: "SOH",
+    averageRating: 8
+  },
+ {
+    name: "CHEM201",
+    sections: [
+      {
+        instructor: "Amanda Turner",
+        room: "B 302",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Robert White",
+        room: "CTC 402",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced chemistry concepts explored.",
+        rating: 9
+      },
+      {
+        review: "The labs were challenging but informative.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["CHEM101", "MATH201"],
+    department: "Chemistry",
+    school: "SOSE",
+    averageRating: 8
+  },
+
+  {
+    name: "ENGR301",
+    sections: [
+      {
+        instructor: "Martin Rodriguez",
+        room: "B 501",
+        sectionName: "C",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Linda Davis",
+        room: "B 601",
+        sectionName: "D",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "In-depth engineering principles covered.",
+        rating: 9
+      },
+      {
+        review: "Practical projects enhanced learning.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["ENGR201", "MATH301"],
+    department: "Engineering",
+    school: "SOSE",
+    averageRating: 8
+  },
+
+  {
+    name: "FRENCH101",
+    sections: [
+      {
+        instructor: "Sophie Martin",
+        room: "F 201",
+        sectionName: "A",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Pierre Johnson",
+        room: "B 301",
+        sectionName: "B",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Enjoyable French language learning experience.",
+        rating: 9
+      },
+      {
+        review: "The instructor made lessons engaging.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Modern Languages",
+    school: "SOH",
+    averageRating: 8
+  },
+
+  {
+    name: "PHYS300",
+    sections: [
+      {
+        instructor: "Julia Turner",
+        room: "CTC 401",
+        sectionName: "A",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Samuel White",
+        room: "B 501",
+        sectionName: "B",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced physics theories discussed.",
+        rating: 9
+      },
+      {
+        review: "The instructor provided clear explanations.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["PHYS200", "MATH301"],
+    department: "Physics",
+    school: "SOSE",
+    averageRating: 8
+  },
+
+  {
+    name: "POLSCI101",
+    sections: [
+      {
+        instructor: "Daniel Turner",
+        room: "F 201",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Olivia White",
+        room: "B 301",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Insightful discussions on political concepts.",
+        rating: 9
+      },
+      {
+        review: "The instructor encouraged critical thinking.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Political Science",
+    school: "SOSS",
+    averageRating: 8
+  },
+  {
+    name: "THEO11",
+    sections: [
+      {
+        instructor: "Father Thomas",
+        room: "Chapel",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Sister Mary",
+        room: "Chapel",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Deep theological discussions.",
+        rating: 9
+      },
+      {
+        review: "The instructor made the subject spiritually enriching.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Theology",
+    school: "SOH",
+    averageRating: 8
+  },
+
+  {
+    name: "MATH10",
+    sections: [
+      {
+        instructor: "Professor Johnson",
+        room: "B 301",
+        sectionName: "A",
+        timeslot: "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+        instructor: "Rodriguez",
+        room: "CTC 401",
+        sectionName: "B",
+        timeslot: "TTh 2:00 PM - 3:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Foundations of basic mathematical concepts.",
+        rating: 7
+      },
+      {
+        review: "The instructor was patient and supportive.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Mathematics",
+    school: "SOSE",
+    averageRating: 7
+  },
+
+  {
+    name: "BIO31.01",
+    sections: [
+      {
+        instructor: "Emily White",
+        room: "CTC02",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Robert Turner",
+        room: "F 202",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "In-depth exploration of biology concepts.",
+        rating: 8
+      },
+      {
+        review: "The labs were informative and engaging.",
+        rating: 9
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Biology",
+    school: "SOSE",
+    averageRating: 8
+  },
+
+  {
+    name: "SocSc11",
+    sections: [
+      {
+        instructor: "Rachel Smith",
+        room: "F 201",
+        sectionName: "A",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Christopher Turner",
+        room: "B 301",
+        sectionName: "B",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Insightful discussions on social science concepts.",
+        rating: 9
+      },
+      {
+        review: "The instructor encouraged critical thinking.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Social Sciences",
+    school: "SOSS",
+    averageRating: 8
+  },
+
+  {
+    name: "PHILO11",
+    sections: [
+      {
+        instructor: "Andrew Turner",
+        room: "CTC 401",
+        sectionName: "A",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Emma Davis",
+        room: "B 501",
+        sectionName: "B",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Thought-provoking philosophy discussions.",
+        rating: 9
+      },
+      {
+        review: "Challenging but rewarding readings.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Philosophy",
+    school: "SOH",
+    averageRating: 8
+  },
+
+  {
+    name: "THEO13",
+    sections: [
+      {
+        instructor: "James Turner",
+        room: "F 212",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Angela Smith",
+        room: "B 321",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced theological discussions.",
+        rating: 9
+      },
+      {
+        review: "The instructor provided profound insights.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["THEO11"],
+    department: "Theology",
+    school: "SOH",
+    averageRating: 8
+  },
+  {
+    name: "CS201",
+    sections: [
+      {
+        instructor: "Rachel Turner",
+        room: "F 210",
+        sectionName: "B",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Michael Johnson",
+        room: "B 310",
+        sectionName: "A",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Practical coding exercises were beneficial.",
+        rating: 7
+      },
+      {
+        review: "The coursework was challenging but rewarding.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["CS110", "MATH201"],
+    department: "Computer Science",
+    school: "SOSE",
+    averageRating: 7
+  },
+
+  {
+    name: "MATH301",
+    sections: [
+      {
+        instructor: "Oliver Davis",
+        room: "B 502",
+        sectionName: "C",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Sophia Turner",
+        room: "B 602",
+        sectionName: "D",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced mathematical concepts explored.",
+        rating: 9
+      },
+      {
+        review: "The instructor provided clear explanations.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["MATH201"],
+    department: "Mathematics",
+    school: "SOSE",
+    averageRating: 8
+  },
+
+  {
+    name: "CHEM301",
+    sections: [
+      {
+        instructor: "Emma Turner",
+        room: "CTC 401",
+        sectionName: "A",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Daniel Davis",
+        room: "B 501",
+        sectionName: "B",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "In-depth exploration of advanced chemistry.",
+        rating: 8
+      },
+      {
+        review: "Challenging but informative labs.",
+        rating: 9
+      }
+    ],
+    prerequisites: ["CHEM201", "MATH301"],
+    department: "Chemistry",
+    school: "SOSE",
+    averageRating: 8
+  },
+  {
+    name: "ECON401",
+    sections: [
+      {
+        instructor: "Sophia Turner",
+        room: "B 502",
+        sectionName: "C",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Daniel Johnson",
+        room: "B 602",
+        sectionName: "D",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced economic theories explored.",
+        rating: 9
+      },
+      {
+        review: "The instructor provided real-world insights.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["ECON301"],
+    department: "Economics",
+    school: "JGSOM",
+    averageRating: 8
+  },
+  {
+    name: "ART101",
+    sections: [
+      {
+        instructor: "Emily Turner",
+        room: "CTC 301",
+        sectionName: "A",
+        timeslot: "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+        instructor: "Robert Johnson",
+        room: "CTC 401",
+        sectionName: "B",
+        timeslot: "TTh 2:00 PM - 3:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Creative and inspiring art classes.",
+        rating: 9
+      },
+      {
+        review: "The instructor encouraged artistic expression.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Art",
+    school: "SOH",
+    averageRating: 8
+  },
+  {
+    name: "MUSIC200",
+    sections: [
+      {
+        instructor: "David Turner",
+        room: "F 201",
+        sectionName: "A",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Olivia Johnson",
+        room: "B 301",
+        sectionName: "B",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "In-depth exploration of music theory.",
+        rating: 9
+      },
+      {
+        review: "Engaging music performances and discussions.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Music",
+    school: "SOH",
+    averageRating: 8
+  },
+  {
+    name: "LING101",
+    sections: [
+      {
+        instructor: "Sophie Turner",
+        room: "F 202",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Michael Johnson",
+        room: "B 302",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating insights into linguistics.",
+        rating: 9
+      },
+      {
+        review: "The instructor made language analysis enjoyable.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Linguistics",
+    school: "SOH",
+    averageRating: 8
+  },
+  {
+    name: "ENVSCI100",
+    sections: [
+      {
+        instructor: "Nathan Turner",
+        room: "CTC 401",
+        sectionName: "A",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Emma Johnson",
+        room: "B 501",
+        sectionName: "B",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Eye-opening exploration of environmental science.",
+        rating: 9
+      },
+      {
+        review: "The labs provided hands-on experience.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Environmental Science",
+    school: "SOSE",
+    averageRating: 8
+  },
+
+
+
+   name: "PHYS301",
+    sections: [
+      {
+        instructor: "Dr. Benjamin Turner",
+        room: "Physics Lab 101",
+        sectionName: "A",
+        timeslot: "MWF 10:00 AM - 12:00 PM"
+      },
+      {
+        instructor: "Dr. Samantha Johnson",
+        room: "Physics Lab 201",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 3:00 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Challenging but rewarding physics course.",
+        rating: 9
+      },
+      {
+        review: "The labs enhanced the understanding of theoretical concepts.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["PHYSICS201", "MATH202"],
+    department: "Physics",
+    school: "SOSE",
+    averageRating: 8
+  },
+  {
+    name: "PSYCH101",
+    sections: [
+      {
+        instructor: "Dr. Taylor Turner",
+        room: "Psychology Building 301",
+        sectionName: "A",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Dr. Jordan Johnson",
+        room: "Psychology Building 401",
+        sectionName: "B",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating introduction to psychology.",
+        rating: 9
+      },
+      {
+        review: "Engaging discussions and thought-provoking assignments.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Psychology",
+    school: "SOSS",
+    averageRating: 8
+  },
+  {
+    name: "CHEM202",
+    sections: [
+      {
+        instructor: "Emma Turner",
+        room: "Chemistry Lab 201",
+        sectionName: "A",
+        timeslot: "MWF 1:00 PM - 3:00 PM"
+      },
+      {
+        instructor: "Michael Johnson",
+        room: "Chemistry Lab 301",
+        sectionName: "B",
+        timeslot: "TTh 10:00 AM - 12:00 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Comprehensive coverage of organic chemistry principles.",
+        rating: 9
+      },
+      {
+        review: "The labs provided hands-on experience with chemical reactions.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["CHEMISTRY101"],
+    department: "Chemistry",
+    school: "SOSE",
+    averageRating: 8
+  },
+  {
+    name: "HISTO101",
+    sections: [
+      {
+        instructor: "Dr. Olivia Turner",
+        room: "F 202",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Dr. Ethan Johnson",
+        room: "B 302",
+        sectionName: "B",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Exploration of historical events with engaging lectures.",
+        rating: 9
+      },
+      {
+        review: "The instructor brought history to life with vivid storytelling.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "History",
+    school: "SOH",
+    averageRating: 8
+  },
+  {
+    name: "CS401",
+    sections: [
+      {
+        instructor: "Dr. Nathan Turner",
+        room: "Lab 401",
+        sectionName: "A",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Dr. Sophia Johnson",
+        room: "Lab 501",
+        sectionName: "B",
+        timeslot: "TTh 2:00 PM - 3:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced programming concepts and real-world applications.",
+        rating: 9
+      },
+      {
+        review: "Challenging but rewarding assignments.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["COMPSCI301"],
+    department: "Computer Science",
+    school: "SOSE",
+    averageRating: 8
+  }
+
+
+])
+
+
+db.courses.insertOne({
+  name: "ART102",
+  sections: [
+    {
+      instructor: "Lisa Johnson",
+      room: "CTC 110",
+      sectionName: "A",
+      timeslot: "MWF 1:00 PM - 2:30 PM"
+    },
+    {
+      instructor: "David Turner",
+      room: "CTC 204",
+      sectionName: "B",
+      timeslot: "TTh 10:00 AM - 11:30 AM"
+    }
+  ],
+  reviews: [
+    {
+      review: "Creative and inspiring.",
+      rating: 9
+    },
+    {
+      review: "The projects were enjoyable.",
+      rating: 8
+    }
+  ],
+  prerequisites: ["None"],
+  department: "Fine Arts",
+  school: "SOH",
+  averageRating: 8
+});
+
+db.courses.updateOne(
+   { name: "MATH101" },
+   { $set: { name: "MATH200" } }
+);
+
+db.courses.deleteOne({ name: "MATH101" });
+
+
+db.courses.find().forEach(printjson);

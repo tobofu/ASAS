@@ -1,0 +1,1058 @@
+db.instructors.insertMany([
+    {
+        firstName: "Michael Edison",
+        lastName: "Legaspi",
+        email: "mlegaspi@ateneo.edu",
+        department: "DISCS",
+        school: "SOSE",
+        classesTaught: [
+            {
+                section: "CSCI 112 K",
+                timeslot: "TF 9:30 AM - 11:00 AM",
+                room: "CTC 107"
+            },
+            {
+                section: "CSCI 70 V",
+                timeslot: "W 6:00 PM - 9:00 PM",
+                room: "F 227"
+            }
+        ],
+        reviews: [
+            {
+                review: "Had him for CSCI 112. Great prof",
+                rating: 8
+            }
+        ]
+    },
+    {
+        firstName: "Artemio Lance",
+        lastName: "Dilag",
+        email: "adilag@ateneo.edu",
+        department: "Mathematics",
+        school: "SOSE",
+        classesTaught: [
+            {
+                section: "MATH 21 C",
+                timeslot: "MTh 11:00 AM - 12:30 PM",
+                room: "SEC-A 208A"
+            },
+            {
+                section: "MATH 60.2 M",
+                timeslot: "TF 12:30 PM - 2:00 PM",
+                room: "SEC-A 208A"
+            }
+        ],
+        reviews: [
+            {
+                review: "He was my professor for MATH 10 and he's super nice but he assigned us alot of work.",
+                rating: 7
+            }
+        ]
+    },
+    {
+        firstName: "Natalie Angela",
+        lastName: "Guevarra",
+        email: "nguevarra@ateneo.edu",
+        department: "English",
+        school: "SOH",
+        classesTaught: [
+            {
+                section: "ENGL 11 F",
+                timeslot: "MTh 3:30 PM - 5:00 PM",
+                room: "CTC 105"
+            }
+        ],
+        reviews: [
+            {
+                review: "Super passionate about teaching! A-able but be prepared for alot of reading and writing.",
+                rating: 9
+            },
+            {
+                review: "She was my prof for ENGL 12. She's really strict and the workload is too heavy.",
+                rating: 4
+            }
+        ]
+    },
+    {
+        firstName: "Gilbert",
+        lastName: "Arcilla",
+        email: "garcilla@ateneo.edu",
+        department: "Leadership and Strategy",
+        school: "JGSOM",
+        classesTaught: [
+            {
+                section: "LAS 50 G",
+                timeslot: "MTh 5:00 PM - 6:30 PM",
+                room: "SOM 211"
+            }
+        ],
+        reviews: [
+            {
+                review: "He's gonna grill you for orals but he's good at teaching",
+                rating: 7
+            },
+            {
+                review: "NO",
+                rating: 1
+            }
+        ]
+    },
+    {
+        firstName: "Evelyn Ann",
+        lastName: "Macasaet",
+        email: "emacasaet@ateneo.edu",
+        department: "Physics",
+        school: "SOSE",
+        classesTaught: [
+            {
+                section: "PHYS 23.11 X",
+                timeslot: "S 12:00 PM - 3:00 PM",
+                room: "F 106"
+            },
+            {
+                section: "PHYS 23.11 Y",
+                timeslot: "S 3:00 PM - 6:00 PM",
+                room: "F 106"
+            }
+        ],
+        reviews: [
+            {
+                review: "I took her class last sem. She explains things really well and the tests are challenging but not too difficult.",
+                rating: 10
+            }
+        ]
+    },
+    {
+        firstName: "Mateo Javier",
+        lastName: "Silva",
+        email: "msilva@ateneo.edu",
+        department: "History",
+        school: "SOSS",
+        classesTaught: [
+            {
+                section: "HISTO 11 K",
+                timeslot: "TF 9:30 AM - 11:00 AM",
+                room: "B 102"
+            },
+            {
+                section: "HISTO 11 M",
+                timeslot: "TF 12:30 PM - 2:00 PM",
+                room: "BEL 209"
+            }
+        ],
+        reviews: [
+            {
+                review: "He's very knowledgeable and considerate. Aable IMO.",
+                rating: 7
+            },
+            {
+                review: "his lectures and readings felt disjointed and a bit boring. also expect alot of writing and recitation. i'd avoid his class",
+                rating: 3
+            }
+        ]
+    },
+    {
+        "firstName": "Rolando",
+        "lastName": "Salazar",
+        "email": "rsalazar@ateneo.edu",
+        "department": "Biology",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "BIO 30.01 H",
+                "timeslot": "MTh 6:30 PM - 8:00 PM",
+                "room": "SEC-A 117A"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Thorough in teaching. Labs are hands-on. Be prepared for detailed exams.",
+                "rating": 9
+            }
+        ]
+    },
+    {
+        "firstName": "Estrella",
+        "lastName": "Garcia",
+        "email": "egarcia@ateneo.edu",
+        "department": "Biology",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "BIO 30.02 J",
+                "timeslot": "TF 8:00 AM - 9:30 AM",
+                "room": "SEC-B 305A"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Clear explanations. Expect a lot of reading. Labs are interesting and relevant.",
+                "rating": 7
+            }
+        ]
+    },
+    {
+        "firstName": "Ferdinand",
+        "lastName": "Reyes",
+        "email": "freyes@ateneo.edu",
+        "department": "Chemistry",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "CHEM 21.32 WX2",
+                "timeslot": "S 2:00 PM - 5:00 PM",
+                "room": "SEC-C 206A"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Challenging but rewarding. Labs are essential. Engaging professor.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Rogelio",
+        "lastName": "dela Cruz",
+        "email": "rdelacruz@ateneo.edu",
+        "department": "Chinese Studies",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "CSP 11 K",
+                "timeslot": "TF 9:30 AM - 11:00 AM",
+                "room": "CTC 204"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Interesting class. A lot of reading. Professor is knowledgeable about Chinese culture.",
+                "rating": 7
+            }
+        ]
+    },
+    {
+        "firstName": "Maria",
+        "lastName": "Rivera",
+        "email": "mrivera@ateneo.edu",
+        "department": "Communications",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "COMM 20.03 H",
+                "timeslot": "MTh 6:30 PM - 8:00 PM",
+                "room": "SS 280"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Passionate about media. Assignments can be challenging. Great insights into the industry.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Aurora",
+        "lastName": "Santiago",
+        "email": "asantiago@ateneo.edu",
+        "department": "Communications",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "COMM 20.03 YZW",
+                "timeslot": "W 6:00 PM - 9:00 PM",
+                "room": "SS 280"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Engaging discussions. Expect group projects. Valuable insights into communication strategies.",
+                "rating": 7
+            }
+        ]
+    },
+    {
+        "firstName": "Andres",
+        "lastName": "Villanueva",
+        "email": "avillanueva@ateneo.edu",
+        "department": "Development Studies",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "DEV 100.1 ST1",
+                "timeslot": "W 8:00 AM - 11:00 AM",
+                "room": "F 113"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Passionate about development. Group projects can be challenging but meaningful.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Tomas",
+        "lastName": "Sison",
+        "email": "tsison@ateneo.edu",
+        "department": "DISCS",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "CSCI 111 B",
+                "timeslot": "MTh 9:30 AM - 11:00 AM",
+                "room": "CTC 214"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Great professor. Clear explanations. Expect coding assignments that enhance your skills.",
+                "rating": 9
+            }
+        ]
+    },
+    {
+        "firstName": "Roberto",
+        "lastName": "Cruz",
+        "email": "rcruz@ateneo.edu",
+        "department": "Economics",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "ECON 110 E",
+                "timeslot": "MTh 2:00 PM - 3:30 PM",
+                "room": "K 301"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Knowledgeable about economics. Tests can be challenging. Be ready for critical thinking.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Evangeline",
+        "lastName": "Fernandez",
+        "email": "efernandez@ateneo.edu",
+        "department": "Economics",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "ECON 110 Q",
+                "timeslot": "TF 6:30 PM - 8:00 PM",
+                "room": "B 305"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Explains economic concepts well. Engaging class discussions. Homework can be time-consuming.",
+                "rating": 7
+            }
+        ]
+    },
+    {
+        "firstName": "Matilde",
+        "lastName": "Ocampo",
+        "email": "mocampo@ateneo.edu",
+        "department": "Electronics, Computer, and Communications Engineering",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "ENGG 10 B",
+                "timeslot": "MTh 9:30 AM - 11:00 AM",
+                "room": "F 320"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Excellent teaching. Labs are hands-on. Expect coding projects that challenge your skills.",
+                "rating": 9
+            }
+        ]
+    },
+    {
+        "firstName": "Dionisio",
+        "lastName": "Abad",
+        "email": "dabad@ateneo.edu",
+        "department": "Electronics, Computer, and Communications Engineering",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "ENGG 11 F",
+                "timeslot": "MTh 3:30 PM - 5:00 PM",
+                "room": "F 320"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Clear explanations. Challenging coding assignments. Great professor for programming courses.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Rafael",
+        "lastName": "Alonzo",
+        "email": "ralonzo@ateneo.edu",
+        "department": "Electronics, Computer, and Communications Engineering",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "ENGG 11 O",
+                "timeslot": "TF 3:30 PM - 5:00 PM",
+                "room": "F 320"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Engaging lectures. Assignments are relevant. Expect to develop strong coding skills.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Juanito",
+        "lastName": "Santos",
+        "email": "jsantos@ateneo.edu",
+        "department": "English",
+        "school": "SOH",
+        "classesTaught": [
+            {
+                "section": "ENE 13.05i B",
+                "timeslot": "MTh 9:30 AM - 11:00 AM",
+                "room": "SEC-A 204"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Passionate about literature. In-depth discussions. Expect challenging readings and essays.",
+                "rating": 7
+            }
+        ]
+    },
+    {
+        "firstName": "Arturo",
+        "lastName": "Aguilar",
+        "email": "aaguilar@ateneo.edu",
+        "department": "Environmental Science",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "ENVI 10.01 N",
+                "timeslot": "TF 2:00 PM - 3:30 PM",
+                "room": "SEC-A 205"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Passionate about environmental issues. Labs are eye-opening. Assignments are relevant.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Felicidad",
+        "lastName": "Rivera",
+        "email": "frivera@ateneo.edu",
+        "department": "Environmental Science",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "ENVI 10.02 UV2",
+                "timeslot": "S 11:00 AM - 2:00 PM",
+                "room": "SEC-C 306A"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Caring professor. Field trips are insightful. Be prepared for hands-on projects.",
+                "rating": 7
+            }
+        ]
+    },
+    {
+        "firstName": "Isabelita",
+        "lastName": "Castillo",
+        "email": "icastillo@ateneo.edu",
+        "department": "European Studies",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "EURO 24 O",
+                "timeslot": "TF 3:30 PM - 5:00 PM",
+                "room": "CTC 206"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Knowledgeable about European history. Discussions are enriching. Be ready for critical analysis.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Rosario",
+        "lastName": "Lim",
+        "email": "rlim@ateneo.edu",
+        "department": "Filipino",
+        "school": "SOH",
+        "classesTaught": [
+            {
+                "section": "FILI 11 C",
+                "timeslot": "MTh 11:00 AM - 12:30 PM",
+                "room": "B 307"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Passionate about Filipino literature. Expect challenging readings and discussions.",
+                "rating": 7
+            }
+        ]
+    },
+    {
+        "firstName": "Melchor",
+        "lastName": "Sarmiento",
+        "email": "msarmiento@ateneo.edu",
+        "department": "Filipino",
+        "school": "SOH",
+        "classesTaught": [
+            {
+                "section": "FILI 12 J",
+                "timeslot": "TF 8:00 AM - 9:30 AM",
+                "room": "B 205"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Encourages deep analysis of Filipino literature. Class discussions are thought-provoking.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Meliton",
+        "lastName": "Villanueva",
+        "email": "mvillanueva@ateneo.edu",
+        "department": "Finance and Accounting",
+        "school": "JGSOM",
+        "classesTaught": [
+            {
+                "section": "ACCT 113 ST1",
+                "timeslot": "W 8:00 AM - 11:00 AM",
+                "room": "CTC 308"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Clear explanations of accounting principles. Tests can be challenging but fair.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Carlos",
+        "lastName": "dela Cruz",
+        "email": "cdelacruz@ateneo.edu",
+        "department": "Finance and Accounting",
+        "school": "JGSOM",
+        "classesTaught": [
+            {
+                "section": "ACCT 122 L",
+                "timeslot": "TF 11:00 AM - 12:30 PM",
+                "room": "CTC 406"
+            },
+            {
+                "section": "ACCT 122 YZW",
+                "timeslot": "W 6:00 PM - 9:00 PM",
+                "room": "CTC 406"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Knowledgeable professor. Engaging discussions. Be ready for extensive accounting practice.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Beatriz",
+        "lastName": "Lim",
+        "email": "blim@ateneo.edu",
+        "department": "Fine Arts",
+        "school": "SOH",
+        "classesTaught": [
+            {
+                "section": "ARTS 104 G",
+                "timeslot": "MTh 5:00 PM - 6:30 PM",
+                "room": "CTC 203"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Passionate about fine arts. Assignments allow creative expression. Recommended for art enthusiasts.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Eduardo",
+        "lastName": "Mendoza",
+        "email": "emendoza@ateneo.edu",
+        "department": "Health Sciences",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "HSCI 20 A",
+                "timeslot": "MTh 8:00 AM - 9:30 AM",
+                "room": "CTC 414"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Very knowledgeable in health sciences. Labs provide hands-on experience. A demanding but rewarding course.",
+                "rating": 9
+            }
+        ]
+    },
+    {
+        "firstName": "Armando",
+        "lastName": "Ramos",
+        "email": "aramos@ateneo.edu",
+        "department": "History",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "HISTO 12 N",
+                "timeslot": "TF 2:00 PM - 3:30 PM",
+                "room": "B 209"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Passionate about history. Lectures are insightful. Prepare for detailed exams.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Victorino",
+        "lastName": "Torres",
+        "email": "vtorres@ateneo.edu",
+        "department": "Interdisciplinary Studies",
+        "school": "SOH",
+        "classesTaught": [
+            {
+                "section": "HUMAN 147 WX1",
+                "timeslot": "W 2:00 PM - 5:00 PM",
+                "room": "G 312A"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Fascinating interdisciplinary insights. Engaging discussions. Recommended for open-minded learners.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Ronaldo",
+        "lastName": "Gonzales",
+        "email": "rgonzales@ateneo.edu",
+        "department": "Japanese Studies",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "JPN 11 D",
+                "timeslot": "MTh 12:30 PM - 2:00 PM",
+                "room": "CTC 306"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Deep understanding of Japanese culture. Language lessons are effective. Highly recommended.",
+                "rating": 9
+            }
+        ]
+    },
+    {
+        "firstName": "Josefina",
+        "lastName": "Santos",
+        "email": "jsantos@ateneo.edu",
+        "department": "Leadership and Strategy",
+        "school": "JGSOM",
+        "classesTaught": [
+            {
+                "section": "LAS 20 D",
+                "timeslot": "MTh 12:30 PM - 2:00 PM",
+                "room": "CTC 104"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Leadership insights are valuable. Engaging class discussions. Prepare for challenging group projects.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Lorna",
+        "lastName": "Mercado",
+        "email": "lmercado@ateneo.edu",
+        "department": "Leadership and Strategy",
+        "school": "JGSOM",
+        "classesTaught": [
+            {
+                "section": "LAS 21 M",
+                "timeslot": "TF 12:30 PM - 2:00 PM",
+                "room": "SOM 103"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Passionate about leadership. Assignments are practical. Expect insightful discussions.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Ramon",
+        "lastName": "Rodriguez",
+        "email": "rrodriguez@ateneo.edu",
+        "department": "Leadership and Strategy",
+        "school": "JGSOM",
+        "classesTaught": [
+            {
+                "section": "LAS 50 M",
+                "timeslot": "TF 12:30 PM - 2:00 PM",
+                "room": "SOM 205"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Leadership insights are valuable. Engaging class discussions. Prepare for challenging group projects.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Renato",
+        "lastName": "Santos",
+        "email": "rsantos@ateneo.edu",
+        "department": "Marketing and Law",
+        "school": "JGSOM",
+        "classesTaught": [
+            {
+                "section": "LLAW 113 A",
+                "timeslot": "MTh 8:00 AM - 9:30 AM",
+                "room": "CTC 304"
+            },
+            {
+                "section": "LLAW 113 UV1",
+                "timeslot": "W 11:00 AM - 2:00 PM",
+                "room": "CTC 304"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Extensive knowledge in marketing and law. Expect interactive discussions. Prepare for challenging assessments.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Erlinda",
+        "lastName": "Vasquez",
+        "email": "evasquez@ateneo.edu",
+        "department": "Marketing and Law",
+        "school": "JGSOM",
+        "classesTaught": [
+            {
+                "section": "LLAW 115 E",
+                "timeslot": "MTh 2:00 PM - 3:30 PM",
+                "room": "SOM 203"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "She provides clear explanations and engages the class well.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Josephine",
+        "lastName": "Cruz",
+        "email": "jcruz@ateneo.edu",
+        "department": "Marketing and Law",
+        "school": "JGSOM",
+        "classesTaught": [
+            {
+                "section": "LLAW 116 UV2",
+                "timeslot": "S 11:00 AM - 2:00 PM",
+                "room": "SOM 105"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Challenging but rewarding course. Her feedback is helpful.",
+                "rating": 9
+            }
+        ]
+    },
+    {
+        "firstName": "Soledad",
+        "lastName": "Reyes",
+        "email": "sreyes@ateneo.edu",
+        "department": "Mathematics",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "MATH 10 L",
+                "timeslot": "TF 11:00 AM - 12:30 PM",
+                "room": "SEC-A 210"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Tough, but she's dedicated to helping students understand.",
+                "rating": 7
+            }
+        ]
+    },
+    {
+        "firstName": "Rodrigo",
+        "lastName": "Manalo",
+        "email": "rmanalo@ateneo.edu",
+        "department": "Modern Languages",
+        "school": "SOH",
+        "classesTaught": [
+            {
+                "section": "FRE 11 F",
+                "timeslot": "MTh 3:30 PM - 5:00 PM",
+                "room": "BEL 210"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Great professor, very passionate about the subject.",
+                "rating": 9
+            }
+        ]
+    },
+    {
+        "firstName": "Mariano",
+        "lastName": "dela Rosa",
+        "email": "mdelarosa@ateneo.edu",
+        "department": "Philosophy",
+        "school": "SOH",
+        "classesTaught": [
+            {
+                "section": "PHILO 12 J",
+                "timeslot": "TF 8:00 AM - 9:30 AM",
+                "room": "BEL 206"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Delivers thought-provoking lectures, but the workload is heavy.",
+                "rating": 7
+            }
+        ]
+    },
+    {
+        "firstName": "Cynthia",
+        "lastName": "Abad",
+        "email": "cabad@ateneo.edu",
+        "department": "Physics",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "PHYS 33.01 K",
+                "timeslot": "TF 9:30 AM - 11:00 AM",
+                "room": "F 106"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Clear explanations and fair grading.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Adelina",
+        "lastName": "Mendoza",
+        "email": "amendoza@ateneo.edu",
+        "department": "Political Science",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "POLSC 21 L",
+                "timeslot": "TF 11:00 AM - 12:30 PM",
+                "room": "CTC 103"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Highly knowledgeable and engaging professor.",
+                "rating": 9
+            }
+        ]
+    },
+    {
+        "firstName": "Amelia",
+        "lastName": "Ocampo",
+        "email": "aocampo@ateneo.edu",
+        "department": "Political Science",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "POLSC 31 YW",
+                "timeslot": "W 5:00 PM - 8:00 PM",
+                "room": "CTC 303"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Passionate about the subject, but the workload is heavy.",
+                "rating": 7
+            }
+        ]
+    },
+    {
+        "firstName": "Anita",
+        "lastName": "Gonzales",
+        "email": "agonzales@ateneo.edu",
+        "department": "Psychology",
+        "school": "SOSS",
+        "classesTaught": [
+            {
+                "section": "PSYC 20 Q",
+                "timeslot": "TF 6:30 PM - 8:00 PM",
+                "room": "B 103"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Engaging lectures, but exams can be challenging.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+        "firstName": "Consuelo",
+        "lastName": "Garcia",
+        "email": "cgarcia@ateneo.edu",
+        "department": "Science Block",
+        "school": "SOSE",
+        "classesTaught": [
+            {
+                "section": "STS 10 ST2",
+                "timeslot": "S 8:00 AM - 11:00 AM",
+                "room": "B 104"
+            }
+        ],
+        "reviews": [
+            {
+                "review": "Extremely knowledgeable, but the class can be demanding.",
+                "rating": 8
+            }
+        ]
+    },
+    {
+    "firstName": "Rosalinda",
+    "lastName": "Santos",
+    "email": "rsantos@ateneo.edu",
+    "department": "Sociology and Anthropology",
+    "school": "SOSS",
+    "classesTaught": [
+      {
+        "section": "ANTH 211.2 O",
+        "timeslot": "TF 3:30 PM - 5:00 PM",
+        "room": "B 305"
+      }
+    ],
+    "reviews": [
+      {
+        "review": "Engaging professor with interesting perspectives.",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "firstName": "Alfonso",
+    "lastName": "Manalo",
+    "email": "amanalo@ateneo.edu",
+    "department": "Theology",
+    "school": "SOH",
+    "classesTaught": [
+      {
+        "section": "THEO 12 YZW",
+        "timeslot": "W 6:00 PM - 9:00 PM",
+        "room": "BEL 102"
+      }
+    ],
+    "reviews": [
+      {
+        "review": "Encourages critical thinking, but assignments can be overwhelming.",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "firstName": "Luz",
+    "lastName": "Reyes",
+    "email": "lreyes@ateneo.edu",
+    "department": "Theology and Ministry",
+    "school": "SOH",
+    "classesTaught": [
+      {
+        "section": "TMP 255 G",
+        "timeslot": "MTh 5:00 PM - 6:30 PM",
+        "room": "LST"
+      }
+    ],
+    "reviews": [
+      {
+        "review": "Provides insightful discussions, but assignments are time-consuming.",
+        "rating": 8
+      }
+    ]
+  }
+]);
+
+db.instructors.insertOne({
+    "firstName": "Jotaro",
+    "lastName": "Kujo",
+    "email": "jkujo@ateneo.edu",
+    "department": "Biology",
+    "school": "SOSE",
+    "classesTaught": [
+        {
+            "section": "BIO 100.3 J",
+            "timeslot": "TF 8:00 AM - 9:30 AM",
+            "room": "SEC-A 116A"
+        }
+    ],
+    "reviews": [
+        {
+            "review": "He's very curt and he looks scary but he makes sure students can all keep up in his class.",
+            "rating": 10
+        },
+        {
+            "review": "I have to warn you he's always too quiet or too loud in class. Also has a weird fixation on dolphins.",
+            "rating": 3
+        }
+    ]
+});
+
+db.instructors.updateOne(
+    {lastName: "Manalo"},
+    {$set: {firstname: "Alfonse"}}
+);
+
+db.instructors.deleteOne({lastName: "Reyes"});
+
+db.instructors.find().forEach(printjson);

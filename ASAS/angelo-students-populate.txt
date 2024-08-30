@@ -1,0 +1,377 @@
+db.students.insertMany([
+    {
+        firstName: "Alice",
+        lastName: "Smith",
+        year: 2,
+        program: "Computer Science",
+        email: "alice.smith@obf.ateneo.edu",
+        acadHist: [
+            { subjectCode: "CS101", subjectDesc: "Introduction to Computer Science", grade: "A" },
+            { subjectCode: "MATH201", subjectDesc: "Calculus I", grade: "B+" }
+        ]
+    },
+    {
+        firstName: "Bob",
+        lastName: "Johnson",
+        year: 3,
+        program: "Electrical Engineering",
+        email: "bob.johnson@obf.ateneo.edu",
+        acadHist: [
+            { subjectCode: "EE301", subjectDesc: "Digital Circuits", grade: "A" },
+            { subjectCode: "PHYS202", subjectDesc: "Physics II", grade: "B" }
+        ]
+    },
+
+    {
+        firstName: "Zara",
+        lastName: "Khan",
+        year: 4,
+        program: "Biochemistry",
+        email: "zara.khan@obf.ateneo.edu",
+        acadHist: [
+            { subjectCode: "CHEM401", subjectDesc: "Organic Chemistry", grade: "A" },
+            { subjectCode: "BIOL301", subjectDesc: "Cell Biology", grade: "B+" }
+        ]
+    },
+    {
+        firstName: "Elijah",
+        lastName: "Gonzalez",
+        year: 1,
+        program: "Psychology",
+        email: "elijah.gonzalez@obf.ateneo.edu"
+    },
+    {
+        firstName: "angelo",
+        lastName: "lumba",
+        year: 4,
+        program: "BSMS CS",
+        email: "swailem.lumba@obf.ateneo.edu",
+        acadHist: [ 
+            {
+                subjectCode: "CSCI 20",
+                subjectDesc: "Introduction to Computing",
+                grade: "A"
+            },
+            {
+                subjectCode: "CSCI 21",
+                subjectDesc: "Introduction to Programming",
+                grade: "B+"
+            }
+        ]
+    },
+    {
+        firstName: "Grace",
+        lastName: "Martinez",
+        year: 2,
+        program: "Physics",
+        email: "grace.martinez@obf.ateneo.edu"
+    },
+    {
+        firstName: "David",
+        lastName: "Lopez",
+        year: 3,
+        program: "Chemical Engineering",
+        email: "david.lopez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Sophia",
+        lastName: "Kim",
+        year: 1,
+        program: "History",
+        email: "sophia.kim@obf.ateneo.edu"
+    },
+    {
+        firstName: "Daniel",
+        lastName: "Nguyen",
+        year: 4,
+        program: "Mathematics",
+        email: "daniel.nguyen@obf.ateneo.edu"
+    },
+    {
+        firstName: "Mia",
+        lastName: "Wang",
+        year: 2,
+        program: "Communication Arts",
+        email: "mia.wang@obf.ateneo.edu"
+    },
+        {
+        firstName: "Isaac",
+        lastName: "Perez",
+        year: 3,
+        program: "Civil Engineering",
+        email: "isaac.perez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Olivia",
+        lastName: "Taylor",
+        year: 2,
+        program: "Environmental Science",
+        email: "olivia.taylor@obf.ateneo.edu"
+    },
+    {
+        firstName: "Ethan",
+        lastName: "Hernandez",
+        year: 1,
+        program: "Political Science",
+        email: "ethan.hernandez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Ava",
+        lastName: "Garcia",
+        year: 4,
+        program: "Business Administration",
+        email: "ava.garcia@obf.ateneo.edu"
+    },
+    {
+        firstName: "Liam",
+        lastName: "Rodriguez",
+        year: 2,
+        program: "Sociology",
+        email: "liam.rodriguez@obf.ateneo.edu"
+    },
+        {
+        firstName: "Sophie",
+        lastName: "Lopez",
+        year: 3,
+        program: "Mechanical Engineering",
+        email: "sophie.lopez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Leo",
+        lastName: "Nguyen",
+        year: 1,
+        program: "English Literature",
+        email: "leo.nguyen@obf.ateneo.edu"
+    },
+    {
+        firstName: "Aria",
+        lastName: "Kim",
+        year: 4,
+        program: "Economics",
+        email: "aria.kim@obf.ateneo.edu"
+    },
+    {
+        firstName: "Jack",
+        lastName: "Chen",
+        year: 2,
+        program: "Philosophy",
+        email: "jack.chen@obf.ateneo.edu"
+    },
+    {
+        firstName: "Amelia",
+        lastName: "Gomez",
+        year: 3,
+        program: "Computer Engineering",
+        email: "amelia.gomez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Logan",
+        lastName: "Vargas",
+        year: 1,
+        program: "Music",
+        email: "logan.vargas@obf.ateneo.edu"
+    },
+    {
+        firstName: "Luna",
+        lastName: "Wu",
+        year: 4,
+        program: "Psychology",
+        email: "luna.wu@obf.ateneo.edu"
+    },
+    {
+        firstName: "Max",
+        lastName: "Torres",
+        year: 2,
+        program: "Political Science",
+        email: "max.torres@obf.ateneo.edu"
+    },
+    {
+        firstName: "Emma",
+        lastName: "Ramirez",
+        year: 3,
+        program: "Chemistry",
+        email: "emma.ramirez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Ryan",
+        lastName: "Yang",
+        year: 1,
+        program: "History",
+        email: "ryan.yang@obf.ateneo.edu"
+    },
+    {
+        firstName: "Stella",
+        lastName: "Fisher",
+        year: 4,
+        program: "Business Administration",
+        email: "stella.fisher@obf.ateneo.edu"
+    },
+    {
+        firstName: "Lucas",
+        lastName: "Martinez",
+        year: 2,
+        program: "Physics",
+        email: "lucas.martinez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Penelope",
+        lastName: "Clark",
+        year: 3,
+        program: "Environmental Science",
+        email: "penelope.clark@obf.ateneo.edu"
+    },
+    {
+        firstName: "Oscar",
+        lastName: "Adams",
+        year: 1,
+        program: "Political Science",
+        email: "oscar.adams@obf.ateneo.edu"
+    },
+    {
+        firstName: "Eva",
+        lastName: "Liu",
+        year: 4,
+        program: "Mathematics",
+        email: "eva.liu@obf.ateneo.edu"
+    },
+    {
+        firstName: "Jackson",
+        lastName: "Mendoza",
+        year: 2,
+        program: "Communication Arts",
+        email: "jackson.mendoza@obf.ateneo.edu"
+    },
+    {
+        firstName: "Natalie",
+        lastName: "Fernandez",
+        year: 3,
+        program: "Computer Science",
+        email: "natalie.fernandez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Caleb",
+        lastName: "Alvarez",
+        year: 1,
+        program: "Electrical Engineering",
+        email: "caleb.alvarez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Avery",
+        lastName: "Baker",
+        year: 4,
+        program: "Biochemistry",
+        email: "avery.baker@obf.ateneo.edu"
+    },
+    {
+        firstName: "Hannah",
+        lastName: "Khan",
+        year: 2,
+        program: "Psychology",
+        email: "hannah.khan@obf.ateneo.edu"
+    },
+    {
+        firstName: "Isaiah",
+        lastName: "Fuentes",
+        year: 3,
+        program: "Civil Engineering",
+        email: "isaiah.fuentes@obf.ateneo.edu"
+    },
+    {
+        firstName: "Madison",
+        lastName: "Hernandez",
+        year: 1,
+        program: "Chemical Engineering",
+        email: "madison.hernandez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Eli",
+        lastName: "Martinez",
+        year: 4,
+        program: "Business Administration",
+        email: "eli.martinez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Scarlett",
+        lastName: "Garcia",
+        year: 2,
+        program: "Sociology",
+        email: "scarlett.garcia@obf.ateneo.edu"
+    },
+    {
+        firstName: "Justin",
+        lastName: "Rodriguez",
+        year: 3,
+        program: "Mechanical Engineering",
+        email: "justin.rodriguez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Mila",
+        lastName: "Taylor",
+        year: 1,
+        program: "English Literature",
+        email: "mila.taylor@obf.ateneo.edu"
+    },
+    {
+        firstName: "Levi",
+        lastName: "Chen",
+        year: 4,
+        program: "Economics",
+        email: "levi.chen@obf.ateneo.edu"
+    },
+    {
+        firstName: "Lily",
+        lastName: "Gomez",
+        year: 2,
+        program: "Philosophy",
+        email: "lily.gomez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Evan",
+        lastName: "Vargas",
+        year: 3,
+        program: "Computer Engineering",
+        email: "evan.vargas@obf.ateneo.edu"
+    },
+    {
+        firstName: "Aurora",
+        lastName: "Wu",
+        year: 1,
+        program: "Music",
+        email: "aurora.wu@obf.ateneo.edu"
+    },
+    {
+        firstName: "Brayden",
+        lastName: "Ramirez",
+        year: 4,
+        program: "Psychology",
+        email: "brayden.ramirez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Zoe",
+        lastName: "Torres",
+        year: 2,
+        program: "Political Science",
+        email: "zoe.torres@obf.ateneo.edu"
+    },
+        {
+        firstName: "Lucy",
+        lastName: "Martinez",
+        year: 3,
+        program: "Chemistry",
+        email: "lucy.martinez@obf.ateneo.edu"
+    },
+    {
+        firstName: "Henry",
+        lastName: "Adams",
+        year: 1,
+        program: "History",
+        email: "henry.adams@obf.ateneo.edu"
+    },
+    {
+        firstName: "Aiden",
+        lastName: "Liu",
+        year: 4,
+        program: "Mathematics",
+        email: "aiden.liu@obf.ateneo.edu"
+    }
+]);

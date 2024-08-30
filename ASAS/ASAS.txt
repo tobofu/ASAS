@@ -1,0 +1,266 @@
+mongosh <ip>
+
+use ASAS
+
+db.createCollection("students", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["firstName", "lastName", "year", "program", "email"],
+            properties: {
+                firstName: {
+                    bsonType: "string",
+                    description: "student's first name - Required."
+                },
+                lastName: {
+                    bsonType: "string",
+                    description: "student's last name - Required."
+                },
+                year: {
+                    bsonType: "int",
+                    description: "student's current year - Required."
+                },
+                program: {
+                    bsonType: "string",
+                    description: "student's degree program - Required."
+                },
+                email: {
+                    bsonType: "string",
+                    description: "student's email address - Required."
+                },
+                acadHist: {
+                    bsonType: "array",
+                    description: "student's academic history - Optional. An array of objects.",
+                    items: {
+                        bsonType: "object",
+                        properties: {
+                            subjectCode: {
+                                bsonType: "string",
+                                description: "subject code."
+                            },
+                            subjectDesc: {
+                                bsonType: "string",
+                                description: "subject description."
+                            },
+                            grade: {
+                                bsonType: "string",
+                                description: "Must be a valid grade",
+                                enum: ["A", "B+", "B", "C+", "C", "D", "F"]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+})
+
+db.createCollection("instructors", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["firstName", "lastName", "email", "department", "school"],
+            properties: {
+                firstName: {
+                    bsonType: "string",
+                    description: "Instructor's first name."
+                },
+                lastName: {
+                    bsonType: "string",
+                    description: "Instructor's last name."
+                },
+                email: {
+                    bsonType: "string",
+                    description: "Instructor's email."
+                },
+                department: {
+                    bsonType: "string",
+                    description: "Instructor's department."
+                },
+                school: {
+                    bsonType: "string",
+                    description: "Instructor's school."
+                },
+                classesTaught: {
+                    bsonType: "array",
+                    description: "Classes taught by the instructor. An array of objects.",
+                    items: {
+                    bsonType: "object",
+                    properties: {
+                        section: {
+                            bsonType: "string",
+                            description: "Section."
+                        },
+                        timeslot: {
+                            bsonType: "string",
+                            description: "Timeslot."
+                        },
+                        room: {
+                            bsonType: "string",
+                            description: "Room."
+                        }
+                    }
+                    }
+                },
+                reviews: {
+                    bsonType: "array",
+                    description: "Instructor's reviews. An array of objects.",
+                    items: {
+                    bsonType: "object",
+                    properties: {
+                        review: {
+                            bsonType: "string",
+                            description: "Review."
+                        },
+                        rating: {
+                            bsonType: "int",
+                            description: "Rating."
+                        }
+                    }
+                    }
+                },
+                averageRating: {
+                    bsonType: "int",
+                    description: "Average rating of the instructor."
+                }
+            }
+        }
+    }
+})
+
+db.createCollection("courses", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["sections", "prerequisites", "department", "school"],
+            properties: {
+		name: {
+                    bsonType: "string",
+                    description: "Name of course. - Required."
+                },
+                sections: {
+                    bsonType: "array",
+                    description: "Array of course sections. Each section is an object.",
+                    items: {
+                    bsonType: "object",
+                    properties: {
+                        instructor: {
+                            bsonType: "string",
+                            description: "Instructor of the section."
+                        },
+                        room: {
+                            bsonType: "string",
+                            description: "Room of the section."
+                        },
+                        sectionName: {
+                            bsonType: "string",
+                            description: "Name of the section."
+                        },
+                        timeslot: {
+                            bsonType: "string",
+                            description: "Timeslot of the section."
+                        }
+                    }
+                    }
+                },
+                reviews: {
+                    bsonType: "array",
+                    description: "Array of course reviews. Each review is an object.",
+                    items: {
+                    bsonType: "object",
+                    properties: {
+                        review: {
+                            bsonType: "string",
+                            description: "Review of the course."
+                        },
+                        rating: {
+                            bsonType: "int",
+                            description: "Rating of the course."
+                        }
+                    }
+                    }
+                },
+                prerequisites: {
+                    bsonType: "array",
+                    description: "Array of course prerequisites. Each prerequisite is a string."
+                },
+                department: {
+                    bsonType: "string",
+                    description: "Department of the course."
+                },
+                school: {
+                    bsonType: "string",
+                    description: "School of the course."
+                },
+                averageRating: {
+                    bsonType: "int",
+                    description: "Average rating of the course rounded off."
+                }
+            }
+        }
+    }
+})
+
+db.createCollection("locations", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["buildingName", "location"],
+      properties: {
+        buildingName: {
+          bsonType: "string",
+          description: "Name of the building."
+        },
+        departments: {
+          bsonType: "array",
+          description: "Array of departments within the location.",
+          items: {
+            bsonType: "object",
+            properties: {
+              departmentName: {
+                bsonType: "string",
+                description: "Name of the department."
+              },
+              departmentChair: {
+                bsonType: "string",
+                description: "Name of the department chair."
+              }
+            }
+          }
+        },
+        classrooms: {
+          bsonType: "array",
+          description: "Array of classroom names (strings)."
+        },
+        laboratories: {
+          bsonType: "array",
+          description: "Array of laboratory names (strings)."
+        },
+        otherOffices: {
+          bsonType: "array",
+          description: "Array of other office names (strings)."
+        },
+        location: {
+          bsonType: "object",
+          description: "GeoJSON point representing the building's location.",
+          required: ["type", "coordinates"],
+          properties: {
+            type: {
+              bsonType: "string",
+              enum: ["Point"]
+            },
+            coordinates: {
+              bsonType: "array",
+              description: "[longitude, latitude]",
+              required: ["0", "1"],
+              items: {
+                bsonType: "double"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+})
+
